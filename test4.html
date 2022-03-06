@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 4</title>
+
+    <style>
+        .preview {
+  width: 400px;
+  margin: 0 auto;
+}
+
+main img, main div {
+  display: block;
+  width: 250px;
+  height: 250px;
+  margin: 20px auto;
+  box-shadow: 5px 5px 0 black;
+}
+
+main img:first-child {
+    background: url(https://raw.githubusercontent.com/mdn/learning-area/main/accessibility/tasks/html-css/html/images/teapot.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+main img:nth-child(2){
+    background: url("https://raw.githubusercontent.com/mdn/learning-area/main/accessibility/tasks/html-css/html/images/football.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+    </style>
+
+</head>
+<body>
+
+
+
+
+<!-- Bien y bello code -->
+
+<header>
+    <img src="https://raw.githubusercontent.com/mdn/learning-area/main/accessibility/tasks/html-css/html/images/star.png" alt="A start that I use to decorate my page">
+    <h1>Groovy images</h1>    
+</header>
+<main>
+    <img>
+    <img>
+</main>
+
+<!-- Bad code -->
+
+    <header>
+        <img src="images/star.png" alt="A star that I use to decorate my page">
+        <h1>Groovy images</h1>
+      </header>
+      <main>
+        <img src="images/teapot.jpg">
+        <img src="images/football.jpg">
+      </main>
+          
+</body>
+</html>
+
